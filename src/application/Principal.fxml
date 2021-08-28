@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.PrincipalController">
+  <tabs>
+    <Tab fx:id="tabCliente" text="Cliente">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="tfCpf" layoutX="110.0" layoutY="53.0" />
+                  <Label fx:id="lblCpf" layoutX="31.0" layoutY="57.0" text="CPF" />
+                  <TextField fx:id="tfNome" layoutX="110.0" layoutY="104.0" prefHeight="25.0" prefWidth="432.0" />
+                  <TextField fx:id="tfLogradouro" layoutX="110.0" layoutY="161.0" prefHeight="25.0" prefWidth="433.0" />
+                  <TextField fx:id="tfNumero" layoutX="110.0" layoutY="219.0" prefHeight="25.0" prefWidth="83.0" />
+                  <Label fx:id="lblNome" layoutX="28.0" layoutY="108.0" text="Nome" />
+                  <Label layoutX="28.0" layoutY="165.0" text="Logradouro" />
+                  <Label fx:id="lblNumero" layoutX="28.0" layoutY="223.0" text="Número" />
+                  <Button fx:id="btnBuscar" layoutX="293.0" layoutY="53.0" mnemonicParsing="false" onAction="#acaoCliente" text="Buscar" />
+                  <Button fx:id="btnCadastrar" layoutX="26.0" layoutY="284.0" mnemonicParsing="false" onAction="#acaoCliente" text="Cadastrar" />
+                  <Button fx:id="btnAtualizar" layoutX="162.0" layoutY="284.0" mnemonicParsing="false" onAction="#acaoCliente" text="Atualizar" />
+                  <Button fx:id="btnExcluir" layoutX="301.0" layoutY="284.0" mnemonicParsing="false" onAction="#acaoCliente" text="Excluir" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
